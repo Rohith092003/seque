@@ -414,8 +414,9 @@ p{ margin:0; }
 .why-card:hover .why-icon{ background:rgba(217,138,43,0.22); }
 .why-card h3{ font-size:19px; color:var(--ink); margin-bottom:10px; }
 .why-card p{ color:var(--grey); font-size:15px; }
-.on-steel .why-card h3{ color:var(--paper); }
-.on-steel .why-card p{ color:var(--grey-light); }
+.on-steel .spec-card.why-card{ background:var(--steel-2) !important; }
+.on-steel .why-card h3{ color:var(--paper) !important; }
+.on-steel .why-card p{ color:var(--grey-light) !important; }
 
 /* ---------------- Delivery modes ---------------- */
 .mode-row{
