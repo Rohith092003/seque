@@ -128,7 +128,63 @@ get_header();
 
 <?php
 get_template_part('template-parts/client-row');
+?>
 
+<section class="section on-steel">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow"><?php esc_html_e('WHY CHOOSE US', 'seque-infratech'); ?></div>
+      <h2><?php esc_html_e("We don't just deliver fuel — we deliver value.", 'seque-infratech'); ?></h2>
+      <p><?php esc_html_e('From tailored fuel solutions to seamless global logistics, Seque Infratech brings the full spectrum of expertise, partnerships, and execution to every engagement.', 'seque-infratech'); ?></p>
+    </div>
+    <div class="grid cols-3">
+      <div class="spec-card why-card">
+        <div class="why-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
+        </div>
+        <h3><?php esc_html_e('Tailored Products', 'seque-infratech'); ?></h3>
+        <p><?php esc_html_e('Fuel customized to your exact technical and performance specifications — from aviation-grade turbine fuels to renewable biodiesel blends.', 'seque-infratech'); ?></p>
+      </div>
+      <div class="spec-card why-card">
+        <div class="why-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+        </div>
+        <h3><?php esc_html_e('Global Logistics Network', 'seque-infratech'); ?></h3>
+        <p><?php esc_html_e('Powered by key partnerships with Gasa USA, Huntaway Midstream West, and Pemex USA — connecting your supply chain across continents.', 'seque-infratech'); ?></p>
+      </div>
+      <div class="spec-card why-card">
+        <div class="why-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+        </div>
+        <h3><?php esc_html_e('Pipeline Delivery Expertise', 'seque-infratech'); ?></h3>
+        <p><?php esc_html_e('Uniquely positioned to deliver across major U.S. fuel corridors — West Coast, Rockies, Gulf Coast, and East Coast pipeline networks.', 'seque-infratech'); ?></p>
+      </div>
+      <div class="spec-card why-card">
+        <div class="why-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+        </div>
+        <h3><?php esc_html_e('Export Excellence', 'seque-infratech'); ?></h3>
+        <p><?php esc_html_e('Full-spectrum international support — from documentation to shipping — with FOB, CNF, and Ex-Works terms available for global clients.', 'seque-infratech'); ?></p>
+      </div>
+      <div class="spec-card why-card">
+        <div class="why-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8"/><path d="M12 17v4"/></svg>
+        </div>
+        <h3><?php esc_html_e('Integrated Project Support', 'seque-infratech'); ?></h3>
+        <p><?php esc_html_e('Technical assistance, program management, and flexible payment terms — providing end-to-end support beyond just fuel delivery.', 'seque-infratech'); ?></p>
+      </div>
+      <div class="spec-card why-card">
+        <div class="why-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        </div>
+        <h3><?php esc_html_e('Trusted Transport Partners', 'seque-infratech'); ?></h3>
+        <p><?php esc_html_e('Including Chevron and Hornbeck Offshore Services for high-reliability fuel movement — ensuring safe, timely delivery wherever you operate.', 'seque-infratech'); ?></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<?php
 get_template_part('template-parts/cta-band', null, [
     'heading'     => __('Ready to fuel your next mission-critical project?', 'seque-infratech'),
     'button_text' => __('Get in touch', 'seque-infratech'),
