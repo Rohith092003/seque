@@ -72,6 +72,10 @@ get_header();
       <h3 style="font-size:24px; color:var(--ink); margin-bottom:12px;"><?php esc_html_e( 'Strategic Reach Across Major North American Corridors', 'seque-infratech' ); ?></h3>
       <p style="color:var(--grey); max-width:68ch; font-size:16px;"><?php esc_html_e( 'We are uniquely positioned to deliver bulk fuel products across major U.S. pipeline infrastructures and strategic shipping waterways, ensuring secure and resilient supply lines for domestic and overseas missions.', 'seque-infratech' ); ?></p>
 
+      <div class="media-banner" style="margin-bottom:24px;">
+        <img src="<?php echo esc_url( get_template_directory_uri() . '/images/logistics-multimodal.jpg' ); ?>" alt="<?php esc_attr_e( 'Multimodal North American Energy Transport & Pipeline Corridors', 'seque-infratech' ); ?>" loading="lazy">
+      </div>
+
       <div class="corridor-strip">
         <div class="corridor-badge">
           <span class="region"><?php esc_html_e( 'CORRIDOR 01', 'seque-infratech' ); ?></span>

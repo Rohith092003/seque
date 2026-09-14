@@ -30,6 +30,7 @@ get_header();
     <div class="grid cols-2" id="specGrid" style="margin-bottom:1px;">
 
       <div class="spec-card" data-category="aviation">
+        <div class="card-media"><img src="<?php echo esc_url( get_template_directory_uri() . '/images/fuel-aviation.jpg' ); ?>" alt="<?php esc_attr_e('Aviation Fuels', 'seque-infratech'); ?>" loading="lazy"></div>
         <span class="tag"><?php esc_html_e('AVIATION FUELS', 'seque-infratech'); ?></span>
         <h3><?php esc_html_e('Turbine fuels for air & sea power', 'seque-infratech'); ?></h3>
         <p><?php esc_html_e('Aviation-grade fuels tailored to the stringent demands of commercial airlines, defense forces, and naval operations — refined for optimal combustion, engine performance, and compliance with global standards.', 'seque-infratech'); ?></p>
@@ -44,6 +45,7 @@ get_header();
       </div>
 
       <div class="spec-card" data-category="marine">
+        <div class="card-media"><img src="<?php echo esc_url( get_template_directory_uri() . '/images/fuel-marine-bunker.jpg' ); ?>" alt="<?php esc_attr_e('Marine & Bunker Fuels', 'seque-infratech'); ?>" loading="lazy"></div>
         <span class="tag"><?php esc_html_e('BUNKER FUELS', 'seque-infratech'); ?></span>
         <h3><?php esc_html_e('Fuel for maritime operations', 'seque-infratech'); ?></h3>
         <p><?php esc_html_e('Powering vessels navigating global shipping lanes, with consistent fuel availability and delivery to ports and offshore platforms.', 'seque-infratech'); ?></p>
@@ -55,6 +57,7 @@ get_header();
       </div>
 
       <div class="spec-card" data-category="diesel">
+        <div class="card-media"><img src="<?php echo esc_url( get_template_directory_uri() . '/images/fuel-diesel-fleet.jpg' ); ?>" alt="<?php esc_attr_e('Diesel Products', 'seque-infratech'); ?>" loading="lazy"></div>
         <span class="tag"><?php esc_html_e('DIESEL PRODUCTS', 'seque-infratech'); ?></span>
         <h3><?php esc_html_e('Conventional & renewable diesel', 'seque-infratech'); ?></h3>
         <p><?php esc_html_e('From transportation fleets to industrial machinery, our diesel products meet a wide range of energy demands while supporting cleaner energy goals.', 'seque-infratech'); ?></p>
@@ -69,6 +72,7 @@ get_header();
       </div>
 
       <div class="spec-card" data-category="diesel">
+        <div class="card-media"><img src="<?php echo esc_url( get_template_directory_uri() . '/images/fuel-biodiesel.jpg' ); ?>" alt="<?php esc_attr_e('Blended Biodiesel', 'seque-infratech'); ?>" loading="lazy"></div>
         <span class="tag"><?php esc_html_e('BLENDED BIODIESEL', 'seque-infratech'); ?></span>
         <h3><?php esc_html_e('Sustainable performance blends', 'seque-infratech'); ?></h3>
         <p><?php esc_html_e('Engineered for sustainability without compromising engine performance, with blend ratios to support different energy transition strategies.', 'seque-infratech'); ?></p>
@@ -117,6 +121,9 @@ get_header();
       <div class="eyebrow"><?php esc_html_e('TEMPORARY FUEL STORAGE', 'seque-infratech'); ?></div>
       <h2><?php esc_html_e('Flexible, short-term storage wherever the project takes you.', 'seque-infratech'); ?></h2>
       <p><?php esc_html_e('Tailored for construction zones, remote worksites, military deployments, and emergency response scenarios.', 'seque-infratech'); ?></p>
+    </div>
+    <div class="media-banner" style="border-color:var(--line-dark); margin-bottom:28px;">
+      <img src="<?php echo esc_url( get_template_directory_uri() . '/images/fuel-temporary-storage.jpg' ); ?>" alt="<?php esc_attr_e('Tactical Temporary Fuel Storage Depot', 'seque-infratech'); ?>" loading="lazy">
     </div>
     <div class="grid cols-2" style="background:var(--line-dark); border-color:var(--line-dark);">
       <div class="spec-card" style="background:var(--ink);">

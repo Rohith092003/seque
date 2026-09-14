@@ -66,8 +66,8 @@ get_header();
     </div>
     <div style="display:grid; grid-template-columns:0.8fr 1.2fr; gap:56px; align-items:start; margin-bottom:56px;">
       <div>
-        <div class="monogram">
-          <span class="letters">IE</span>
+        <div class="monogram has-photo">
+          <img src="<?php echo esc_url( get_template_directory_uri() . '/images/leadership-iola-edwards.jpg' ); ?>" alt="<?php esc_attr_e( 'Ms. Iola Edwards — Founder & CEO', 'seque-infratech' ); ?>" class="monogram-img">
           <span class="caption"><?php esc_html_e( 'MS. IOLA EDWARDS — FOUNDER & CEO', 'seque-infratech' ); ?></span>
         </div>
       </div>
@@ -87,8 +87,8 @@ get_header();
 
     <div style="display:grid; grid-template-columns:0.8fr 1.2fr; gap:56px; align-items:start; padding-top:40px; border-top:1px solid var(--line);">
       <div>
-        <div class="monogram" style="aspect-ratio:1/1;">
-          <span class="letters" style="font-size:72px;">NE</span>
+        <div class="monogram has-photo" style="aspect-ratio:1/1;">
+          <img src="<?php echo esc_url( get_template_directory_uri() . '/images/leadership-neil-cfo.jpg' ); ?>" alt="<?php esc_attr_e( 'Neil — Chief Financial Officer', 'seque-infratech' ); ?>" class="monogram-img">
           <span class="caption"><?php esc_html_e( 'NEIL — CHIEF FINANCIAL OFFICER', 'seque-infratech' ); ?></span>
         </div>
       </div>
@@ -113,6 +113,7 @@ get_header();
     <div class="event-grid">
       <div class="event-card" style="background:var(--ink); border-color:var(--line-dark);">
         <div class="event-media-box">
+          <img src="<?php echo esc_url( get_template_directory_uri() . '/images/event-industry-day.jpg' ); ?>" alt="<?php esc_attr_e( 'Industry Day 2023', 'seque-infratech' ); ?>" class="event-media-img">
           <span class="event-badge"><?php esc_html_e( 'DEFENSE PROCUREMENT · 2023', 'seque-infratech' ); ?></span>
         </div>
         <span class="event-tag"><?php esc_html_e( 'ANNUAL FORUM', 'seque-infratech' ); ?></span>
@@ -122,6 +123,7 @@ get_header();
 
       <div class="event-card" style="background:var(--ink); border-color:var(--line-dark);">
         <div class="event-media-box">
+          <img src="<?php echo esc_url( get_template_directory_uri() . '/images/event-dream-it-do-it.jpg' ); ?>" alt="<?php esc_attr_e( 'Dream It Do It WNY 2024', 'seque-infratech' ); ?>" class="event-media-img">
           <span class="event-badge"><?php esc_html_e( 'COMMUNITY & STEM · 2024', 'seque-infratech' ); ?></span>
         </div>
         <span class="event-tag"><?php esc_html_e( 'REGIONAL INITIATIVE', 'seque-infratech' ); ?></span>
