@@ -9,6 +9,11 @@ get_header();
 ?>
 
 <section class="hero">
+  <!-- Hero Background Video -->
+  <video class="hero-video" autoplay muted loop playsinline poster="<?php echo esc_url(get_template_directory_uri() . '/screenshot.png'); ?>">
+    <source src="<?php echo esc_url(get_template_directory_uri() . '/Video/Video.mp4'); ?>" type="video/mp4">
+  </video>
+  <div class="hero-overlay"></div>
   <div class="wrap hero-inner">
     <div>
       <div class="hero-kicker reveal"><?php esc_html_e('CAGE 8LH32 · DLA-APPROVED · WOSB-CERTIFIED', 'seque-infratech'); ?></div>
