@@ -623,6 +623,9 @@ p{ margin:0; }
 .footer-brand:hover{ opacity:.95; }
 .footer-logo{
   height:44px; width:auto; display:block; object-fit:contain;
+  border-radius:0 !important;
+  overflow:visible !important;
+  clip-path:none !important;
   transition:transform .25s cubic-bezier(0.16,1,0.3,1), filter .25s ease;
 }
 .footer-brand:hover .footer-logo{
