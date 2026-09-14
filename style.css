@@ -235,7 +235,8 @@ p{ margin:0; }
   z-index:1; pointer-events:none;
 }
 .hero::before{
-  display:none;
+  display:none !important;
+  content:none !important;
 }
 .hero-inner{ position:relative; z-index:3; display:grid; grid-template-columns:1.15fr 0.85fr; gap:48px; align-items:end; }
 .hero > .wrap{ position:relative; z-index:3; }
