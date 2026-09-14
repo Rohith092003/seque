@@ -25,7 +25,12 @@ get_header();
         <div class="eyebrow"><?php esc_html_e( 'GET IN TOUCH', 'seque-infratech' ); ?></div>
         <div class="contact-detail">
           <span class="label"><?php esc_html_e( 'OFFICE', 'seque-infratech' ); ?></span>
-          <span class="value"><?php esc_html_e( '10 Lafayette Square, Suite #1502', 'seque-infratech' ); ?><br><?php esc_html_e( 'Buffalo, New York 14203', 'seque-infratech' ); ?></span>
+          <span class="value">
+            <?php esc_html_e( '10 Lafayette Square, Suite #1502', 'seque-infratech' ); ?><br><?php esc_html_e( 'Buffalo, New York 14203', 'seque-infratech' ); ?><br>
+            <a href="https://maps.app.goo.gl/3ZBm2KGMsPB7rSFC9" target="_blank" rel="noopener noreferrer" style="display:inline-flex; align-items:center; gap:6px; margin-top:8px; font-size:12px; font-family:var(--font-mono); color:var(--amber); text-decoration:none;">
+              <span><?php esc_html_e( 'VIEW ON GOOGLE MAPS ↗', 'seque-infratech' ); ?></span>
+            </a>
+          </span>
         </div>
         <div class="contact-detail">
           <span class="label"><?php esc_html_e( 'EMAIL', 'seque-infratech' ); ?></span>
@@ -40,27 +45,25 @@ get_header();
           <span class="value" style="font-size:15px; font-family:var(--font-mono); color:var(--grey);"><?php esc_html_e( 'CAGE 8LH32 · WOSB Certified · DLA-Approved', 'seque-infratech' ); ?></span>
         </div>
 
-        <div class="map-figure" style="margin-top:32px;">
-          <svg viewBox="0 0 400 260" xmlns="http://www.w3.org/2000/svg" aria-label="Buffalo, New York Coordinates Map">
-            <rect width="400" height="260" fill="#0A1A26"/>
-            <g stroke="#1B4258" stroke-width="1">
-              <line x1="0" y1="43" x2="400" y2="43"/>
-              <line x1="0" y1="86" x2="400" y2="86"/>
-              <line x1="0" y1="129" x2="400" y2="129"/>
-              <line x1="0" y1="172" x2="400" y2="172"/>
-              <line x1="0" y1="215" x2="400" y2="215"/>
-              <line x1="66" y1="0" x2="66" y2="260"/>
-              <line x1="133" y1="0" x2="133" y2="260"/>
-              <line x1="200" y1="0" x2="200" y2="260"/>
-              <line x1="266" y1="0" x2="266" y2="260"/>
-              <line x1="333" y1="0" x2="333" y2="260"/>
-            </g>
-            <circle cx="200" cy="129" r="7" fill="#D98A2B"/>
-            <circle cx="200" cy="129" r="16" fill="none" stroke="#D98A2B" stroke-width="1" opacity="0.5"/>
-            <circle cx="200" cy="129" r="26" fill="none" stroke="#D98A2B" stroke-width="1" opacity="0.25"/>
-            <text x="20" y="30" fill="#8A93A0" font-family="IBM Plex Mono" font-size="11">BUFFALO, NEW YORK</text>
-            <text x="20" y="240" fill="#5B6670" font-family="IBM Plex Mono" font-size="10">42.8864° N, 78.8784° W</text>
-          </svg>
+        <div class="map-embed-wrapper" style="margin-top:32px;">
+          <div class="map-frame" style="position:relative; width:100%; aspect-ratio:16/10; border:1px solid var(--line); overflow:hidden; background:var(--steel);">
+            <iframe
+              src="https://maps.google.com/maps?q=10+Lafayette+Square,+Buffalo,+NY+14203&t=&z=15&ie=UTF8&iwloc=&output=embed"
+              width="100%"
+              height="100%"
+              style="border:0; display:block; position:absolute; inset:0; width:100%; height:100%;"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              title="<?php esc_attr_e( 'Seque Infratech Headquarters — 10 Lafayette Square, Buffalo, NY', 'seque-infratech' ); ?>">
+            </iframe>
+          </div>
+          <div style="display:flex; justify-content:space-between; align-items:center; margin-top:10px; font-family:var(--font-mono); font-size:12px;">
+            <a href="https://maps.app.goo.gl/3ZBm2KGMsPB7rSFC9" target="_blank" rel="noopener noreferrer" style="color:var(--amber); text-decoration:none; font-weight:500;">
+              <?php esc_html_e( 'OPEN IN GOOGLE MAPS ↗', 'seque-infratech' ); ?>
+            </a>
+            <span style="color:var(--grey);"><?php esc_html_e( '10 LAFAYETTE SQ, BUFFALO NY', 'seque-infratech' ); ?></span>
+          </div>
         </div>
       </div>
 

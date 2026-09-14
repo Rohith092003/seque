@@ -34,8 +34,7 @@
       <div>
         <h4><?php esc_html_e('CONTACT', 'seque-infratech'); ?></h4>
         <ul>
-          <li>10 Lafayette Square, Suite #1502</li>
-          <li>Buffalo, New York 14203</li>
+          <li><a href="https://maps.app.goo.gl/3ZBm2KGMsPB7rSFC9" target="_blank" rel="noopener noreferrer" style="color:inherit; text-decoration:none;" title="<?php esc_attr_e('View in Google Maps', 'seque-infratech'); ?>">10 Lafayette Square, Suite #1502<br>Buffalo, New York 14203</a></li>
           <li><a href="mailto:iola@sequeinfratech.com">iola@sequeinfratech.com</a></li>
           <li><a href="tel:+17167046184">+1 716 704 6184</a></li>
         </ul>

@@ -67,8 +67,7 @@ get_header();
     <div style="display:grid; grid-template-columns:0.8fr 1.2fr; gap:56px; align-items:start; margin-bottom:56px;">
       <div>
         <div class="monogram has-photo">
-          <img src="<?php echo esc_url( get_template_directory_uri() . '/images/leadership-iola-edwards.jpg' ); ?>" alt="<?php esc_attr_e( 'Ms. Iola Edwards — Founder & CEO', 'seque-infratech' ); ?>" class="monogram-img">
-          <span class="caption"><?php esc_html_e( 'MS. IOLA EDWARDS — FOUNDER & CEO', 'seque-infratech' ); ?></span>
+          <img src="<?php echo esc_url( get_template_directory_uri() . '/images/ms-iola-edwards.jpeg' ); ?>" alt="<?php esc_attr_e( 'Ms. Iola Edwards — Founder & CEO', 'seque-infratech' ); ?>" class="monogram-img">
         </div>
       </div>
       <div>
@@ -87,9 +86,8 @@ get_header();
 
     <div style="display:grid; grid-template-columns:0.8fr 1.2fr; gap:56px; align-items:start; padding-top:40px; border-top:1px solid var(--line);">
       <div>
-        <div class="monogram has-photo" style="aspect-ratio:1/1;">
-          <img src="<?php echo esc_url( get_template_directory_uri() . '/images/leadership-neil-cfo.jpg' ); ?>" alt="<?php esc_attr_e( 'Neil — Chief Financial Officer', 'seque-infratech' ); ?>" class="monogram-img">
-          <span class="caption"><?php esc_html_e( 'NEIL — CHIEF FINANCIAL OFFICER', 'seque-infratech' ); ?></span>
+        <div class="monogram has-photo">
+          <img src="<?php echo esc_url( get_template_directory_uri() . '/images/Neil.jpeg' ); ?>" alt="<?php esc_attr_e( 'Neil — Chief Financial Officer', 'seque-infratech' ); ?>" class="monogram-img">
         </div>
       </div>
       <div>
