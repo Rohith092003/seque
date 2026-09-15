@@ -11,7 +11,7 @@ get_header();
 <section class="page-hero">
   <div class="wrap page-hero-inner">
     <div class="breadcrumb"><span class="amber">02</span> · <?php esc_html_e('Capabilities', 'seque-infratech'); ?></div>
-    <h1><?php esc_html_e('Powering industries. Fuelling progress.', 'seque-infratech'); ?></h1>
+    <h1 style="white-space: nowrap;"><?php esc_html_e('Powering industries. Fuelling progress.', 'seque-infratech'); ?></h1>
     <p><?php esc_html_e('At Seque Infratech Inc., we are redefining what it means to be a reliable energy solutions partner in a rapidly evolving global market. Founded in 2020 and backed by over three decades of industry experience, we specialize in fuel sourcing, delivery logistics, temporary storage, and project management. Our strength lies in our ability to match the right product with the right logistics, at the right time — customized for your operational, regulatory, and geographic needs.', 'seque-infratech'); ?></p>
   </div>
 </section>

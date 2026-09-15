@@ -12,7 +12,7 @@ get_header();
 <section class="page-hero">
   <div class="wrap page-hero-inner">
     <div class="breadcrumb"><span class="amber">03</span> · <?php esc_html_e( 'Logistics & Network', 'seque-infratech' ); ?></div>
-    <h1><?php esc_html_e( 'Wherever the project is, we can get fuel there.', 'seque-infratech' ); ?></h1>
+    <h1 style="white-space: nowrap; text-align: left;"><?php esc_html_e( 'Wherever the project is, we deliver.', 'seque-infratech' ); ?></h1>
     <p><?php esc_html_e( 'No matter your location or project scale, we ensure seamless fuel delivery using a robust and reliable logistics network — by road, rail, sea, and pipeline.', 'seque-infratech' ); ?></p>
   </div>
 </section>
@@ -102,7 +102,7 @@ get_header();
   <div class="wrap">
     <div class="section-head">
       <div class="eyebrow"><?php esc_html_e( 'WHY CHOOSE SEQUE INFRATECH', 'seque-infratech' ); ?></div>
-      <h2><?php esc_html_e( "We don't just deliver fuel — we deliver value.", 'seque-infratech' ); ?></h2>
+      <h2 style="white-space: nowrap;"><?php esc_html_e( "We don't just deliver fuel — we deliver value.", 'seque-infratech' ); ?></h2>
     </div>
     <ul class="checklist">
       <li>

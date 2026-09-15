@@ -12,8 +12,8 @@ get_header();
 <section class="page-hero">
   <div class="wrap page-hero-inner">
     <div class="breadcrumb"><span class="amber">01</span> · <?php esc_html_e( 'About Us', 'seque-infratech' ); ?></div>
-    <h1><?php esc_html_e( 'Founded amid uncertainty. Built for resilience.', 'seque-infratech' ); ?></h1>
-    <p><?php esc_html_e( 'Seque Infratech Inc. emerged in January 2020 with a clear vision: to become a trusted partner in delivering people, products, and technology solutions across diverse industries. Rooted in our core competencies of project management, procurement, and business collaboration, Seque Infratech has grown from a bold idea into a globally engaged enterprise.', 'seque-infratech' ); ?></p>
+    <h1><?php echo wp_kses_post( __( 'Founded amid uncertainty.<br>Built for resilience.', 'seque-infratech' ) ); ?></h1>
+    <p><?php esc_html_e( 'Founded in January 2020, Seque Infratech Inc emerged at a time of unprecedented global disruption. Launched on the cusp of the COVID-19 pandemic, our company began its journey amid uncertainty—yet with a clear vision: to become a trusted partner in delivering people, products, and technology solutions across diverse industries. Rooted in our core competencies of project management, procurement, and business collaboration, Seque Infratech has grown from a bold idea into a globally engaged enterprise.', 'seque-infratech' ); ?></p>
   </div>
 </section>
 
