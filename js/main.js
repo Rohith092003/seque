@@ -207,5 +207,12 @@ document.addEventListener('DOMContentLoaded', function () {
         }, 700);
       });
     }
-});
 
+  // Social sidebar — reveal after 3 seconds
+  var socialSidebar = document.querySelector('.social-sidebar');
+  if (socialSidebar) {
+    setTimeout(function () {
+      socialSidebar.classList.add('visible');
+    }, 3000);
+  }
+});

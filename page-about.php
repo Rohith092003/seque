@@ -23,26 +23,33 @@ get_header();
       <div class="eyebrow"><?php esc_html_e( 'OUR JOURNEY SO FAR', 'seque-infratech' ); ?></div>
       <h2><?php esc_html_e( 'A story of resilience, reliability, and rising ambitions.', 'seque-infratech' ); ?></h2>
     </div>
-    <div class="timeline">
-      <div class="tl-item">
-        <div class="tl-year"><?php esc_html_e( 'JANUARY 2020', 'seque-infratech' ); ?></div>
-        <h3><?php esc_html_e( 'A Story of Resilience, Reliability, and Rising Ambitions', 'seque-infratech' ); ?></h3>
-        <p><?php esc_html_e( 'Despite the headwinds of the pandemic, our early years were marked not by hesitation, but by decisive action. Seque Infratech swiftly identified critical market needs and responded by establishing itself as a reliable supplier of fuel oil, extending our reach into key international markets including the United Arab Emirates, Kuwait, and India. Through strategic global trade operations, we fortified our reputation as a company that delivers with integrity and precision — even under the most challenging circumstances.', 'seque-infratech' ); ?></p>
+    <div class="journey-grid">
+      <div class="timeline">
+        <div class="tl-item">
+          <div class="tl-year"><?php esc_html_e( 'JANUARY 2020', 'seque-infratech' ); ?></div>
+          <h3><?php esc_html_e( 'A Story of Resilience, Reliability, and Rising Ambitions', 'seque-infratech' ); ?></h3>
+          <p><?php esc_html_e( 'Despite the headwinds of the pandemic, our early years were marked not by hesitation, but by decisive action. Seque Infratech swiftly identified critical market needs and responded by establishing itself as a reliable supplier of fuel oil, extending our reach into key international markets including the United Arab Emirates, Kuwait, and India. Through strategic global trade operations, we fortified our reputation as a company that delivers with integrity and precision — even under the most challenging circumstances.', 'seque-infratech' ); ?></p>
+        </div>
+        <div class="tl-item">
+          <div class="tl-year"><?php esc_html_e( 'DEFENSE APPROVAL', 'seque-infratech' ); ?></div>
+          <h3><?php esc_html_e( 'A Trusted Partner in National and International Arenas', 'seque-infratech' ); ?></h3>
+          <p><?php esc_html_e( 'Our growth trajectory reached a pivotal milestone with our approval as a supplier to the U.S. Government and the Department of Defense, earning the prestigious CAGE Code (8LH32). This recognition is more than a symbol of compliance — it is a testament to our ability to meet the rigorous standards required for critical land and maritime goods supply. Our engagements with the Defense Logistics Agency (DLA) have opened doors to high-impact collaborations with major corporations, affirming Seque Infratech\'s capability to support complex, large-scale contracts with consistency and excellence.', 'seque-infratech' ); ?></p>
+        </div>
+        <div class="tl-item">
+          <div class="tl-year"><?php esc_html_e( 'JANUARY 2023', 'seque-infratech' ); ?></div>
+          <h3><?php esc_html_e( 'Empowered by Purpose, Led by Diversity', 'seque-infratech' ); ?></h3>
+          <p><?php esc_html_e( 'In January 2023, Seque Infratech became a certified Women-Owned Small Business (WOSB) under the U.S. Small Business Administration (SBA), further defining our identity as a forward-thinking, values-driven enterprise. This designation not only positions us for expanded opportunities across sectors — it also reflects our commitment to fostering diversity, innovation, and inclusive growth within the global supply ecosystem.', 'seque-infratech' ); ?></p>
+        </div>
+        <div class="tl-item">
+          <div class="tl-year"><?php esc_html_e( 'SINCE 2022', 'seque-infratech' ); ?></div>
+          <h3><?php esc_html_e( 'Proving Capability, Delivering Confidence', 'seque-infratech' ); ?></h3>
+          <p><?php esc_html_e( 'While some may question whether a young, agile firm can manage the complexities of large-scale fuel supply, we invite them to examine our results. Since 2022, Seque Infratech has successfully delivered petroleum and biodiesel fuel solutions to Barbados, underscoring our proactive expansion into new markets and our dedication to building long-term, reliable partnerships. To support this, we have secured a strategic alliance with a trusted logistics transporter in Louisiana, a key DLA contractor, ensuring seamless end-to-end supply chain operations.', 'seque-infratech' ); ?></p>
+        </div>
       </div>
-      <div class="tl-item">
-        <div class="tl-year"><?php esc_html_e( 'DEFENSE APPROVAL', 'seque-infratech' ); ?></div>
-        <h3><?php esc_html_e( 'A Trusted Partner in National and International Arenas', 'seque-infratech' ); ?></h3>
-        <p><?php esc_html_e( 'Our growth trajectory reached a pivotal milestone with our approval as a supplier to the U.S. Government and the Department of Defense, earning the prestigious CAGE Code (8LH32). This recognition is more than a symbol of compliance — it is a testament to our ability to meet the rigorous standards required for critical land and maritime goods supply. Our engagements with the Defense Logistics Agency (DLA) have opened doors to high-impact collaborations with major corporations, affirming Seque Infratech\'s capability to support complex, large-scale contracts with consistency and excellence.', 'seque-infratech' ); ?></p>
-      </div>
-      <div class="tl-item">
-        <div class="tl-year"><?php esc_html_e( 'JANUARY 2023', 'seque-infratech' ); ?></div>
-        <h3><?php esc_html_e( 'Empowered by Purpose, Led by Diversity', 'seque-infratech' ); ?></h3>
-        <p><?php esc_html_e( 'In January 2023, Seque Infratech became a certified Women-Owned Small Business (WOSB) under the U.S. Small Business Administration (SBA), further defining our identity as a forward-thinking, values-driven enterprise. This designation not only positions us for expanded opportunities across sectors — it also reflects our commitment to fostering diversity, innovation, and inclusive growth within the global supply ecosystem.', 'seque-infratech' ); ?></p>
-      </div>
-      <div class="tl-item">
-        <div class="tl-year"><?php esc_html_e( 'SINCE 2022', 'seque-infratech' ); ?></div>
-        <h3><?php esc_html_e( 'Proving Capability, Delivering Confidence', 'seque-infratech' ); ?></h3>
-        <p><?php esc_html_e( 'While some may question whether a young, agile firm can manage the complexities of large-scale fuel supply, we invite them to examine our results. Since 2022, Seque Infratech has successfully delivered petroleum and biodiesel fuel solutions to Barbados, underscoring our proactive expansion into new markets and our dedication to building long-term, reliable partnerships. To support this, we have secured a strategic alliance with a trusted logistics transporter in Louisiana, a key DLA contractor, ensuring seamless end-to-end supply chain operations.', 'seque-infratech' ); ?></p>
+      <div class="journey-img-wrap">
+        <img src="<?php echo esc_url( get_template_directory_uri() . '/images/about-journey.jpg' ); ?>"
+             alt="<?php esc_attr_e( 'Fuel tanker on highway at sunset — Seque Infratech journey', 'seque-infratech' ); ?>"
+             class="journey-img">
       </div>
     </div>
   </div>

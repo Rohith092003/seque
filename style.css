@@ -346,7 +346,36 @@ p{ margin:0; }
 .tl-item h3{ font-size:22px; color:var(--ink); margin-bottom:10px; }
 .tl-item p{ color:var(--grey); max-width:64ch; font-size:16px; }
 
-/* ---------------- Cards / spec sheets ---------------- */
+/* ---------------- Journey grid (timeline + image) ---------------- */
+.journey-grid{
+  display:grid;
+  grid-template-columns:1fr 400px;
+  gap:64px;
+  align-items:start;
+}
+.journey-img-wrap{
+  position:sticky;
+  top:100px;
+  border-radius:4px;
+  overflow:hidden;
+  box-shadow:0 20px 60px rgba(0,0,0,0.15);
+}
+.journey-img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  display:block;
+  aspect-ratio:3/4;
+  transition:transform .6s cubic-bezier(0.16,1,0.3,1);
+}
+.journey-img-wrap:hover .journey-img{ transform:scale(1.03); }
+@media(max-width:900px){
+  .journey-grid{ grid-template-columns:1fr; }
+  .journey-img-wrap{ position:static; max-height:400px; aspect-ratio:16/9; }
+  .journey-img{ aspect-ratio:16/9; }
+}
+
+
 .grid{ display:grid; gap:1px; background:var(--line); border:1px solid var(--line); }
 .grid.cols-2{ grid-template-columns:repeat(2,1fr); }
 .grid.cols-3{ grid-template-columns:repeat(3,1fr); }
@@ -835,4 +864,52 @@ p{ margin:0; }
   .media-banner{ aspect-ratio:16/9; }
 }
 
-
+/* ============================================================
+   STICKY SOCIAL SIDEBAR
+   ============================================================ */
+.social-sidebar{
+  position:fixed;
+  right:0;
+  top:50%;
+  transform:translateY(-50%) translateX(100%);
+  z-index:9999;
+  display:flex;
+  flex-direction:column;
+  gap:0;
+  pointer-events:none;
+  opacity:0;
+  transition:transform .5s cubic-bezier(0.16,1,0.3,1), opacity .5s ease;
+}
+.social-sidebar.visible{
+  transform:translateY(-50%) translateX(0);
+  opacity:1;
+  pointer-events:all;
+}
+.social-btn{
+  width:46px;
+  height:46px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-decoration:none;
+  transition:transform .2s cubic-bezier(0.16,1,0.3,1), opacity .2s ease;
+  position:relative;
+}
+.social-btn:hover{
+  transform:translateX(-6px);
+  opacity:1;
+}
+.social-btn svg{
+  width:20px;
+  height:20px;
+  fill:#fff;
+  display:block;
+  flex-shrink:0;
+}
+.social-fb{ background:#1877F2; }
+.social-yt{ background:#FF0000; }
+.social-ig{ background:linear-gradient(160deg,#f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); }
+.social-li{ background:#0A66C2; }
+@media(max-width:600px){
+  .social-sidebar{ display:none; }
+}
