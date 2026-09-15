@@ -65,13 +65,10 @@ document.addEventListener('DOMContentLoaded', function () {
     '.reveal-scale',
     '.section-head',
     '.stat-strip .stat',
-    '.grid > *',
     '.timeline .tl-item',
     '.checklist > li',
     '.mode-row',
-    '.client-row span',
-    '.quote-block',
-    '.cta-band .wrap > *'
+    '.quote-block'
   ];
 
   var revealElements = document.querySelectorAll(revealSelectors.join(', '));
@@ -92,22 +89,24 @@ document.addEventListener('DOMContentLoaded', function () {
         }
       });
     }, {
-      threshold: 0.12,
-      rootMargin: '0px 0px -40px 0px'
+      threshold: 0.02,
+      rootMargin: '200px 0px 50px 0px'
     });
 
-    // Intelligent stagger delay for sibling cards and items within groups
-    var groupContainers = document.querySelectorAll('.stat-strip, .grid, .checklist, .client-row, .timeline');
+    // Intelligent stagger delay for compact badge items (skip heavy cards)
+    var groupContainers = document.querySelectorAll('.stat-strip, .checklist, .client-row');
     groupContainers.forEach(function (container) {
-      var items = container.querySelectorAll('.stat, .spec-card, li, span, .tl-item');
+      var items = container.querySelectorAll('.stat, li, span');
       items.forEach(function (item, index) {
         if (!item.style.transitionDelay) {
-          item.style.transitionDelay = (index * 70) + 'ms';
+          item.style.transitionDelay = (index * 40) + 'ms';
         }
       });
     });
 
     revealElements.forEach(function (el) {
+      // Do not hide cards or essential grids
+      if (el.classList.contains('spec-card')) return;
       if (!el.classList.contains('reveal-left') && !el.classList.contains('reveal-right') && !el.classList.contains('reveal-scale')) {
         el.classList.add('reveal-up');
       }

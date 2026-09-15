@@ -11,7 +11,7 @@ get_header();
 <section class="page-hero">
   <div class="wrap page-hero-inner">
     <div class="breadcrumb"><span class="amber">02</span> · <?php esc_html_e('Capabilities', 'seque-infratech'); ?></div>
-    <h1 style="white-space: nowrap;"><?php esc_html_e('Powering industries. Fuelling progress.', 'seque-infratech'); ?></h1>
+    <h1 class="desktop-nowrap"><?php esc_html_e('Powering industries. Fuelling progress.', 'seque-infratech'); ?></h1>
     <p><?php esc_html_e('At Seque Infratech Inc., we are redefining what it means to be a reliable energy solutions partner in a rapidly evolving global market. Founded in 2020 and backed by over three decades of industry experience, we specialize in fuel sourcing, delivery logistics, temporary storage, and project management. Our strength lies in our ability to match the right product with the right logistics, at the right time — customized for your operational, regulatory, and geographic needs.', 'seque-infratech'); ?></p>
   </div>
 </section>
@@ -30,7 +30,7 @@ get_header();
     <div class="grid cols-2" id="specGrid" style="margin-bottom:1px;">
 
       <div class="spec-card" data-category="aviation">
-        <div class="card-media"><img src="<?php echo esc_url( get_template_directory_uri() . '/images/fuel-aviation.jpg' ); ?>" alt="<?php esc_attr_e('Aviation Fuels', 'seque-infratech'); ?>" loading="lazy"></div>
+        <div class="card-media"><img src="<?php echo esc_url( get_template_directory_uri() . '/images/fuel-aviation.jpg' ); ?>" alt="<?php esc_attr_e('Aviation Fuels', 'seque-infratech'); ?>" fetchpriority="high"></div>
         <span class="tag"><?php esc_html_e('AVIATION FUELS', 'seque-infratech'); ?></span>
         <h3><?php esc_html_e('Turbine fuels for air & sea power', 'seque-infratech'); ?></h3>
         <p><?php esc_html_e('Aviation-grade fuels tailored to the stringent demands of commercial airlines, defense forces, and naval operations — refined for optimal combustion, engine performance, and compliance with global standards.', 'seque-infratech'); ?></p>
@@ -45,7 +45,7 @@ get_header();
       </div>
 
       <div class="spec-card" data-category="marine">
-        <div class="card-media"><img src="<?php echo esc_url( get_template_directory_uri() . '/images/fuel-marine-bunker.jpg' ); ?>" alt="<?php esc_attr_e('Marine & Bunker Fuels', 'seque-infratech'); ?>" loading="lazy"></div>
+        <div class="card-media"><img src="<?php echo esc_url( get_template_directory_uri() . '/images/fuel-marine-bunker.jpg' ); ?>" alt="<?php esc_attr_e('Marine & Bunker Fuels', 'seque-infratech'); ?>" fetchpriority="high"></div>
         <span class="tag"><?php esc_html_e('BUNKER FUELS', 'seque-infratech'); ?></span>
         <h3><?php esc_html_e('Fuel for maritime operations', 'seque-infratech'); ?></h3>
         <p><?php esc_html_e('Powering vessels navigating global shipping lanes, with consistent fuel availability and delivery to ports and offshore platforms.', 'seque-infratech'); ?></p>
