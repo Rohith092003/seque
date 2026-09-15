@@ -57,23 +57,40 @@
     </div>
     <div class="hero-diagram reveal">
       <svg viewBox="0 0 420 380" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <line x1="60" y1="300" x2="200" y2="120" stroke="#D98A2B" stroke-width="1.4" stroke-dasharray="4 5"/>
-        <line x1="200" y1="120" x2="340" y2="60" stroke="#8A93A0" stroke-width="1" stroke-dasharray="3 5"/>
-        <line x1="200" y1="120" x2="330" y2="220" stroke="#8A93A0" stroke-width="1" stroke-dasharray="3 5"/>
-        <line x1="60" y1="300" x2="230" y2="320" stroke="#8A93A0" stroke-width="1" stroke-dasharray="3 5"/>
-        <line x1="230" y1="320" x2="330" y2="220" stroke="#D98A2B" stroke-width="1.4" stroke-dasharray="4 5"/>
+        <defs>
+          <filter id="glow-amber">
+            <feGaussianBlur stdDeviation="2.5" result="blur"/>
+            <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+          </filter>
+          <filter id="text-shadow">
+            <feDropShadow dx="0" dy="1" stdDeviation="2" flood-color="rgba(0,0,0,0.9)" flood-opacity="1"/>
+          </filter>
+        </defs>
 
-        <circle cx="60" cy="300" r="6" fill="#0A1A26" stroke="#D98A2B" stroke-width="2"/>
-        <circle cx="200" cy="120" r="6" fill="#0A1A26" stroke="#D98A2B" stroke-width="2"/>
-        <circle cx="340" cy="60" r="5" fill="#0A1A26" stroke="#8A93A0" stroke-width="1.5"/>
-        <circle cx="330" cy="220" r="5" fill="#0A1A26" stroke="#8A93A0" stroke-width="1.5"/>
-        <circle cx="230" cy="320" r="5" fill="#0A1A26" stroke="#8A93A0" stroke-width="1.5"/>
+        <!-- Connecting Lines -->
+        <line x1="60" y1="300" x2="200" y2="120" stroke="#D98A2B" stroke-width="2" stroke-dasharray="5 5" opacity="0.95"/>
+        <line x1="200" y1="120" x2="340" y2="60" stroke="#FFFFFF" stroke-width="1.5" stroke-dasharray="4 5" opacity="0.7"/>
+        <line x1="200" y1="120" x2="330" y2="220" stroke="#FFFFFF" stroke-width="1.5" stroke-dasharray="4 5" opacity="0.7"/>
+        <line x1="60" y1="300" x2="230" y2="320" stroke="#FFFFFF" stroke-width="1.5" stroke-dasharray="4 5" opacity="0.7"/>
+        <line x1="230" y1="320" x2="330" y2="220" stroke="#D98A2B" stroke-width="2" stroke-dasharray="5 5" opacity="0.95"/>
 
-        <text x="30" y="330" fill="#EFEDE6" font-family="IBM Plex Mono" font-size="11">TERMINAL</text>
-        <text x="172" y="105" fill="#EFEDE6" font-family="IBM Plex Mono" font-size="11">DEPOT</text>
-        <text x="308" y="45" fill="#8A93A0" font-family="IBM Plex Mono" font-size="10">AIRBASE</text>
-        <text x="300" y="240" fill="#8A93A0" font-family="IBM Plex Mono" font-size="10">PORT</text>
-        <text x="198" y="345" fill="#8A93A0" font-family="IBM Plex Mono" font-size="10">FLEET SITE</text>
+        <!-- Glow rings behind amber dots -->
+        <circle cx="60" cy="300" r="12" fill="rgba(217,138,43,0.2)" />
+        <circle cx="200" cy="120" r="12" fill="rgba(217,138,43,0.2)" />
+
+        <!-- Dots -->
+        <circle cx="60" cy="300" r="7" fill="#0A1A26" stroke="#D98A2B" stroke-width="2.5" filter="url(#glow-amber)"/>
+        <circle cx="200" cy="120" r="7" fill="#0A1A26" stroke="#D98A2B" stroke-width="2.5" filter="url(#glow-amber)"/>
+        <circle cx="340" cy="60" r="5.5" fill="#1B4258" stroke="#FFFFFF" stroke-width="1.8"/>
+        <circle cx="330" cy="220" r="5.5" fill="#1B4258" stroke="#FFFFFF" stroke-width="1.8"/>
+        <circle cx="230" cy="320" r="5.5" fill="#1B4258" stroke="#FFFFFF" stroke-width="1.8"/>
+
+        <!-- Labels with shadow for readability -->
+        <text x="30" y="330" fill="#FFFFFF" font-family="IBM Plex Mono" font-size="11" font-weight="600" filter="url(#text-shadow)">TERMINAL</text>
+        <text x="172" y="105" fill="#FFFFFF" font-family="IBM Plex Mono" font-size="11" font-weight="600" filter="url(#text-shadow)">DEPOT</text>
+        <text x="308" y="45" fill="#D98A2B" font-family="IBM Plex Mono" font-size="10" font-weight="600" filter="url(#text-shadow)">AIRBASE</text>
+        <text x="300" y="240" fill="#D98A2B" font-family="IBM Plex Mono" font-size="10" font-weight="600" filter="url(#text-shadow)">PORT</text>
+        <text x="198" y="345" fill="#D98A2B" font-family="IBM Plex Mono" font-size="10" font-weight="600" filter="url(#text-shadow)">FLEET SITE</text>
       </svg>
     </div>
   </div>
