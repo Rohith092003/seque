@@ -225,24 +225,48 @@ document.addEventListener('DOMContentLoaded', function () {
     }, 3000);
   }
 
-  // 9. Hero Video — Pause audio when scrolled out of view, resume when back
+  // 9. Hero Video — Pause/mute audio when scrolled past hero section, resume when in hero section
   var heroVideo = document.querySelector('.hero-video');
   var heroSection = document.querySelector('.hero');
   if (heroVideo && heroSection) {
-    var heroVisibilityObserver = new IntersectionObserver(function (entries) {
-      entries.forEach(function (entry) {
-        if (entry.isIntersecting) {
-          // Hero is visible — unmute and play
+    var hasInteracted = false;
+
+    // Browser policy: audio requires at least one user gesture to play unmuted
+    var enableAudioOnFirstGesture = function () {
+      if (!hasInteracted) {
+        hasInteracted = true;
+        if (heroVideo.getBoundingClientRect().bottom > 80) {
           heroVideo.muted = false;
-          if (heroVideo.paused) heroVideo.play();
-        } else {
-          // Hero is out of view — mute audio
+          heroVideo.play().catch(function () {});
+        }
+      }
+    };
+    ['click', 'touchstart', 'keydown'].forEach(function (evt) {
+      window.addEventListener(evt, enableAudioOnFirstGesture, { once: true, passive: true });
+    });
+
+    var updateVideoAudioOnScroll = function () {
+      var rect = heroSection.getBoundingClientRect();
+      // If hero section has scrolled past the top (user scrolled down past hero) or is completely hidden
+      if (rect.bottom <= 80 || rect.top >= window.innerHeight) {
+        if (!heroVideo.muted) {
           heroVideo.muted = true;
         }
-      });
-    }, {
-      threshold: 0.1  // trigger when at least 10% of hero is visible
-    });
-    heroVisibilityObserver.observe(heroSection);
+        if (!heroVideo.paused) {
+          heroVideo.pause();
+        }
+      } else {
+        // Hero is visible in the viewport
+        if (heroVideo.paused) {
+          heroVideo.play().catch(function () {});
+        }
+        if (hasInteracted && heroVideo.muted) {
+          heroVideo.muted = false;
+        }
+      }
+    };
+
+    window.addEventListener('scroll', updateVideoAudioOnScroll, { passive: true });
+    updateVideoAudioOnScroll();
   }
 });
