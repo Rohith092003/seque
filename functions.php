@@ -72,7 +72,7 @@ function seque_enqueue_scripts() {
         'seque-main',
         get_template_directory_uri() . '/js/main.js',
         [],
-        '1.0.0',
+        '1.0.5',
         true
     );
 
