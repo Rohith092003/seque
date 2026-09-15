@@ -17,7 +17,7 @@ get_header();
   <div class="wrap hero-inner">
     <div>
       <div class="hero-kicker reveal"><?php esc_html_e('CAGE 8LH32 · DLA-APPROVED · WOSB-CERTIFIED', 'seque-infratech'); ?></div>
-      <h1 class="reveal"><?php echo wp_kses_post( __( 'Fuel and logistics,<br>delivered with defense-grade precision.', 'seque-infratech' ) ); ?></h1>
+      <h1 class="reveal"><?php echo wp_kses_post( __( 'Fuel and logistics,<br>delivered with <span class="hero-nowrap">defense-grade precision.</span>', 'seque-infratech' ) ); ?></h1>
       <p class="hero-lede reveal"><?php esc_html_e('Seque Infratech Inc. sources, moves, and stores aviation, marine, and industrial fuels for governments, defense agencies, and global operators — matching the right product to the right logistics, on time, every time.', 'seque-infratech'); ?></p>
       <div class="hero-cta reveal">
         <a href="<?php echo esc_url(home_url('/capabilities/')); ?>" class="btn btn-amber"><?php esc_html_e('View our capabilities', 'seque-infratech'); ?></a>

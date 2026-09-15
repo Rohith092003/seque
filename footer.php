@@ -52,6 +52,7 @@
 
     <div class="footer-bottom">
       <span>&copy; <?php echo esc_html(date('Y')); ?> <?php bloginfo('name'); ?> Inc. <?php esc_html_e('All rights reserved.', 'seque-infratech'); ?></span>
+      <span><?php echo wp_kses_post( __( 'Design &amp; development by <a href="https://openskyglobal.com/" target="_blank" rel="noopener noreferrer">Opensky</a>', 'seque-infratech' ) ); ?></span>
       <span>Buffalo, New York</span>
     </div>
   </div>
