@@ -73,7 +73,7 @@ get_header();
       <div class="eyebrow"><?php esc_html_e( 'LEADERSHIP', 'seque-infratech' ); ?></div>
       <h2><?php esc_html_e( 'Led by two decades of procurement and global trade expertise.', 'seque-infratech' ); ?></h2>
     </div>
-    <div style="display:grid; grid-template-columns:0.8fr 1.2fr; gap:56px; align-items:start; margin-bottom:56px;">
+    <div class="leadership-grid">
       <div>
         <div class="monogram has-photo">
           <img src="<?php echo esc_url( get_template_directory_uri() . '/images/ms-iola-edwards.jpeg' ); ?>" alt="<?php esc_attr_e( 'Ms. Iola Edwards — Founder & CEO', 'seque-infratech' ); ?>" class="monogram-img">
@@ -94,7 +94,7 @@ get_header();
       </div>
     </div>
 
-    <div style="display:grid; grid-template-columns:0.8fr 1.2fr; gap:56px; align-items:start; padding-top:40px; border-top:1px solid var(--line);">
+    <div class="leadership-grid">
       <div>
         <div class="monogram has-photo">
           <img src="<?php echo esc_url( get_template_directory_uri() . '/images/Neil.jpeg' ); ?>" alt="<?php esc_attr_e( 'Neil — Chief Financial Officer', 'seque-infratech' ); ?>" class="monogram-img">
