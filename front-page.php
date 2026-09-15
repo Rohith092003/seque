@@ -10,7 +10,7 @@ get_header();
 
 <section class="hero">
   <!-- Hero Background Video -->
-  <video class="hero-video" autoplay loop playsinline poster="<?php echo esc_url(get_template_directory_uri() . '/screenshot.png'); ?>">
+  <video class="hero-video" autoplay muted loop playsinline poster="<?php echo esc_url(get_template_directory_uri() . '/screenshot.png'); ?>">
     <source src="<?php echo esc_url(get_template_directory_uri() . '/Video/Video2.mp4'); ?>" type="video/mp4">
   </video>
   <div class="hero-overlay"></div>

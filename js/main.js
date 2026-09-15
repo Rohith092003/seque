@@ -225,48 +225,26 @@ document.addEventListener('DOMContentLoaded', function () {
     }, 3000);
   }
 
-  // 9. Hero Video — Pause/mute audio when scrolled past hero section, resume when in hero section
+  // 9. Hero Video — Keep muted, pause when scrolled out of view, resume when back
   var heroVideo = document.querySelector('.hero-video');
   var heroSection = document.querySelector('.hero');
   if (heroVideo && heroSection) {
-    var hasInteracted = false;
+    heroVideo.muted = true;
 
-    // Browser policy: audio requires at least one user gesture to play unmuted
-    var enableAudioOnFirstGesture = function () {
-      if (!hasInteracted) {
-        hasInteracted = true;
-        if (heroVideo.getBoundingClientRect().bottom > 80) {
-          heroVideo.muted = false;
-          heroVideo.play().catch(function () {});
-        }
-      }
-    };
-    ['click', 'touchstart', 'keydown'].forEach(function (evt) {
-      window.addEventListener(evt, enableAudioOnFirstGesture, { once: true, passive: true });
-    });
-
-    var updateVideoAudioOnScroll = function () {
+    var updateVideoOnScroll = function () {
       var rect = heroSection.getBoundingClientRect();
-      // If hero section has scrolled past the top (user scrolled down past hero) or is completely hidden
       if (rect.bottom <= 80 || rect.top >= window.innerHeight) {
-        if (!heroVideo.muted) {
-          heroVideo.muted = true;
-        }
         if (!heroVideo.paused) {
           heroVideo.pause();
         }
       } else {
-        // Hero is visible in the viewport
         if (heroVideo.paused) {
           heroVideo.play().catch(function () {});
-        }
-        if (hasInteracted && heroVideo.muted) {
-          heroVideo.muted = false;
         }
       }
     };
 
-    window.addEventListener('scroll', updateVideoAudioOnScroll, { passive: true });
-    updateVideoAudioOnScroll();
+    window.addEventListener('scroll', updateVideoOnScroll, { passive: true });
+    updateVideoOnScroll();
   }
 });
