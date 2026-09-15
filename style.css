@@ -231,7 +231,7 @@ p{ margin:0; }
 /* Dark overlay to keep text readable over video */
 .hero-overlay{
   position:absolute; inset:0;
-  background:linear-gradient(180deg, rgba(10,26,38,0.72) 0%, rgba(10,26,38,0.88) 100%);
+  background:linear-gradient(180deg, rgba(10,26,38,0.30) 0%, rgba(10,26,38,0.40) 100%);
   z-index:1; pointer-events:none;
 }
 .hero::before{
