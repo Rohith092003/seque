@@ -13,7 +13,7 @@ get_header();
   <div class="wrap page-hero-inner">
     <div class="breadcrumb"><span class="amber">01</span> · <?php esc_html_e( 'About Us', 'seque-infratech' ); ?></div>
     <h1><?php esc_html_e( 'Founded amid uncertainty. Built for resilience.', 'seque-infratech' ); ?></h1>
-    <p><?php esc_html_e( 'Seque Infratech Inc. emerged in January 2020 with a clear vision: to become a trusted partner in delivering people, products, and technology solutions across diverse industries.', 'seque-infratech' ); ?></p>
+    <p><?php esc_html_e( 'Seque Infratech Inc. emerged in January 2020 with a clear vision: to become a trusted partner in delivering people, products, and technology solutions across diverse industries. Rooted in our core competencies of project management, procurement, and business collaboration, Seque Infratech has grown from a bold idea into a globally engaged enterprise.', 'seque-infratech' ); ?></p>
   </div>
 </section>
 
@@ -53,7 +53,9 @@ get_header();
     <div class="section-head">
       <div class="eyebrow"><?php esc_html_e( 'OUR COMMITMENT', 'seque-infratech' ); ?></div>
       <h2><?php esc_html_e( 'Every project is a chance to prove our values.', 'seque-infratech' ); ?></h2>
-      <p><?php esc_html_e( 'We understand the critical nature of the industries we serve, and bring the full strength of our global partnerships, technical expertise, and proven processes to deliver on every promise. As we expand our reach, we remain focused on high-quality fuel solutions, logistical efficiency, and service that exceeds expectations.', 'seque-infratech' ); ?></p>
+      <p><?php esc_html_e( 'At Seque Infratech, every project is an opportunity to demonstrate our values: resilience, dependability, and a commitment to excellence. We understand the critical nature of the industries we serve, and we bring the full strength of our global partnerships, technical expertise, and proven processes to deliver on every promise.', 'seque-infratech' ); ?></p>
+      <p style="margin-top:20px;"><?php esc_html_e( 'As we continue to expand our reach and capabilities, we remain steadfast in our mission — to provide high-quality fuel solutions, logistical efficiency, and a standard of service that exceeds expectations. We are proud of our journey so far, and even more excited for what lies ahead.', 'seque-infratech' ); ?></p>
+      <p style="margin-top:24px; font-family:var(--font-mono); font-size:14px; color:var(--amber); letter-spacing:0.04em;"><?php esc_html_e( 'Seque Infratech Inc. — Driven by trust. Defined by performance.', 'seque-infratech' ); ?></p>
     </div>
   </div>
 </section>

@@ -115,6 +115,42 @@ get_header();
   </div>
 </section>
 
+<section class="section on-steel">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow"><?php esc_html_e('TRUSTED BY INDUSTRY LEADERS', 'seque-infratech'); ?></div>
+      <h2><?php esc_html_e('Earning trust across sectors and geographies.', 'seque-infratech'); ?></h2>
+      <p><?php esc_html_e('Seque Infratech is proud to have earned the trust of both private and government clients. Each engagement is a testament to our reliability, technical excellence, and ability to deliver on promise.', 'seque-infratech'); ?></p>
+    </div>
+    <div class="grid cols-3">
+      <div class="spec-card">
+        <span class="tag"><?php esc_html_e('USA', 'seque-infratech'); ?></span>
+        <h3><?php esc_html_e('CleanTech Environmental', 'seque-infratech'); ?></h3>
+      </div>
+      <div class="spec-card">
+        <span class="tag"><?php esc_html_e('INDIA', 'seque-infratech'); ?></span>
+        <h3><?php esc_html_e('ESSAR Power Ltd', 'seque-infratech'); ?></h3>
+      </div>
+      <div class="spec-card">
+        <span class="tag"><?php esc_html_e('SAUDI ARABIA', 'seque-infratech'); ?></span>
+        <h3><?php esc_html_e('Saleh A. AlRashed &amp; Sons Co.', 'seque-infratech'); ?></h3>
+      </div>
+      <div class="spec-card">
+        <span class="tag"><?php esc_html_e('USA', 'seque-infratech'); ?></span>
+        <h3><?php esc_html_e('BioMass Energys', 'seque-infratech'); ?></h3>
+      </div>
+      <div class="spec-card">
+        <span class="tag"><?php esc_html_e('DEFENSE', 'seque-infratech'); ?></span>
+        <h3><?php esc_html_e('U.S. Department of Defense', 'seque-infratech'); ?></h3>
+      </div>
+      <div class="spec-card">
+        <span class="tag"><?php esc_html_e('UAE', 'seque-infratech'); ?></span>
+        <h3><?php esc_html_e('TROID', 'seque-infratech'); ?></h3>
+      </div>
+    </div>
+  </div>
+</section>
+
 <section class="section on-dark tight">
   <div class="wrap">
     <div class="section-head">
