@@ -96,25 +96,25 @@ get_header();
     </div>
     <div class="grid cols-4" style="background:var(--line-dark); border-color:var(--line-dark);">
       <div class="spec-card" style="background:var(--ink);">
-        <div class="card-media"><img src="<?php echo esc_url( get_template_directory_uri() . '/images/fuel-aviation.jpg' ); ?>" alt="<?php esc_attr_e('Aviation Fuels', 'seque-infratech'); ?>" loading="lazy"></div>
+        <div class="card-media"><img src="<?php echo esc_url( get_template_directory_uri() . '/images/home-capabilities-aviation.jpg' ); ?>" alt="<?php esc_attr_e('Aviation Fuels', 'seque-infratech'); ?>" loading="lazy"></div>
         <span class="tag"><?php esc_html_e('AVIATION', 'seque-infratech'); ?></span>
         <h3 style="color:var(--paper);"><?php esc_html_e('Aviation Fuels', 'seque-infratech'); ?></h3>
         <p style="color:var(--grey-light);"><?php esc_html_e('JP5, Jet A, JA1, F76 — for commercial airlines, defense forces, and naval operations.', 'seque-infratech'); ?></p>
       </div>
       <div class="spec-card" style="background:var(--ink);">
-        <div class="card-media"><img src="<?php echo esc_url( get_template_directory_uri() . '/images/fuel-marine-bunker.jpg' ); ?>" alt="<?php esc_attr_e('Bunker Fuels', 'seque-infratech'); ?>" loading="lazy"></div>
+        <div class="card-media"><img src="<?php echo esc_url( get_template_directory_uri() . '/images/home-capabilities-marine.jpg' ); ?>" alt="<?php esc_attr_e('Bunker Fuels', 'seque-infratech'); ?>" loading="lazy"></div>
         <span class="tag"><?php esc_html_e('MARINE', 'seque-infratech'); ?></span>
         <h3 style="color:var(--paper);"><?php esc_html_e('Bunker Fuels', 'seque-infratech'); ?></h3>
         <p style="color:var(--grey-light);"><?php esc_html_e('High-viscosity marine fuel for cargo ships, tankers, offshore rigs, and naval fleets.', 'seque-infratech'); ?></p>
       </div>
       <div class="spec-card" style="background:var(--ink);">
-        <div class="card-media"><img src="<?php echo esc_url( get_template_directory_uri() . '/images/fuel-diesel-fleet.jpg' ); ?>" alt="<?php esc_attr_e('Diesel & Biodiesel', 'seque-infratech'); ?>" loading="lazy"></div>
+        <div class="card-media"><img src="<?php echo esc_url( get_template_directory_uri() . '/images/home-capabilities-diesel.jpg' ); ?>" alt="<?php esc_attr_e('Diesel & Biodiesel', 'seque-infratech'); ?>" loading="lazy"></div>
         <span class="tag"><?php esc_html_e('ROAD &amp; INDUSTRIAL', 'seque-infratech'); ?></span>
         <h3 style="color:var(--paper);"><?php esc_html_e('Diesel &amp; Biodiesel', 'seque-infratech'); ?></h3>
         <p style="color:var(--grey-light);"><?php esc_html_e('ULSD, renewable diesel, and B100–B20 blends for fleets, agriculture, and industry.', 'seque-infratech'); ?></p>
       </div>
       <div class="spec-card" style="background:var(--ink);">
-        <div class="card-media"><img src="<?php echo esc_url( get_template_directory_uri() . '/images/fuel-temporary-storage.jpg' ); ?>" alt="<?php esc_attr_e('Storage & Delivery', 'seque-infratech'); ?>" loading="lazy"></div>
+        <div class="card-media"><img src="<?php echo esc_url( get_template_directory_uri() . '/images/home-capabilities-storage.jpg' ); ?>" alt="<?php esc_attr_e('Storage & Delivery', 'seque-infratech'); ?>" loading="lazy"></div>
         <span class="tag"><?php esc_html_e('ON-SITE', 'seque-infratech'); ?></span>
         <h3 style="color:var(--paper);"><?php esc_html_e('Storage &amp; Delivery', 'seque-infratech'); ?></h3>
         <p style="color:var(--grey-light);"><?php esc_html_e('Mobile storage to 1,000 gallons, plus truck, rail, barge, and pipeline delivery.', 'seque-infratech'); ?></p>

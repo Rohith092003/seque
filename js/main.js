@@ -2,12 +2,21 @@ document.addEventListener('DOMContentLoaded', function () {
   // 1. Mobile navigation toggle
   var toggle = document.querySelector('.nav-toggle');
   var links = document.querySelector('.nav-links');
+  var header = document.querySelector('.site-header');
   if (toggle && links) {
     toggle.addEventListener('click', function () {
-      links.classList.toggle('open');
+      var isOpen = links.classList.toggle('open');
+      toggle.setAttribute('aria-expanded', isOpen);
+      if (header) header.classList.toggle('menu-open', isOpen);
+      document.body.classList.toggle('menu-locked', isOpen);
     });
     links.querySelectorAll('a').forEach(function (a) {
-      a.addEventListener('click', function () { links.classList.remove('open'); });
+      a.addEventListener('click', function () {
+        links.classList.remove('open');
+        toggle.setAttribute('aria-expanded', 'false');
+        if (header) header.classList.remove('menu-open');
+        document.body.classList.remove('menu-locked');
+      });
     });
   }
 
