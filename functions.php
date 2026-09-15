@@ -64,7 +64,7 @@ function seque_enqueue_scripts() {
         'seque-style',
         get_stylesheet_uri(),
         ['seque-google-fonts'],
-        '1.0.18'
+        '1.0.19'
     );
 
     // Enqueue main interactive script
@@ -72,7 +72,7 @@ function seque_enqueue_scripts() {
         'seque-main',
         get_template_directory_uri() . '/js/main.js',
         [],
-        '1.0.18',
+        '1.0.19',
         true
     );
 
