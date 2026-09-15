@@ -272,11 +272,11 @@ p{ margin:0; }
   letter-spacing:0.04em; margin-bottom:22px;
 }
 .hero h1{
-  font-size:clamp(38px,5.6vw,64px); line-height:1.04; color:var(--paper);
-  max-width:30ch;
+  font-size:clamp(38px,5.6vw,64px); line-height:1.04; color:#FFFFFF;
+  max-width:30ch; text-shadow: 0 2px 12px rgba(0,0,0,0.7);
 }
 .hero-lede{
-  margin-top:26px; font-size:22px; font-weight:700; color:var(--grey-light); max-width:46ch; line-height:1.6;
+  margin-top:26px; font-size:22px; font-weight:700; color:#FFFFFF; max-width:46ch; line-height:1.6; text-shadow: 0 2px 8px rgba(0,0,0,0.6);
 }
 .hero-cta{ display:flex; gap:14px; margin-top:38px; flex-wrap:wrap; }
 .hero-diagram{ position:relative; }
