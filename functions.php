@@ -64,7 +64,7 @@ function seque_enqueue_scripts() {
         'seque-style',
         get_stylesheet_uri(),
         ['seque-google-fonts'],
-        '1.0.9'
+        '1.0.10'
     );
 
     // Enqueue main interactive script
@@ -410,4 +410,29 @@ function seque_ensure_core_pages() {
     update_option('seque_core_pages_installed_v1', 1);
 }
 add_action('init', 'seque_ensure_core_pages');
+
+/**
+ * Customizer settings for Forminator and Contact Form
+ */
+function seque_customize_register($wp_customize) {
+    $wp_customize->add_section('seque_contact_section', [
+        'title'       => __('Contact Form Settings', 'seque-infratech'),
+        'priority'    => 130,
+        'description' => __('Configure Forminator contact form for the Contact page.', 'seque-infratech'),
+    ]);
+
+    $wp_customize->add_setting('seque_forminator_form_id', [
+        'default'           => '',
+        'sanitize_callback' => 'sanitize_text_field',
+        'transport'         => 'refresh',
+    ]);
+
+    $wp_customize->add_control('seque_forminator_form_id', [
+        'label'       => __('Forminator Form ID or Shortcode', 'seque-infratech'),
+        'description' => __('Enter your Forminator Form ID (e.g. 123) or complete shortcode (e.g. [forminator_form id="123"]). If left empty, the theme automatically detects published Forminator forms or page content.', 'seque-infratech'),
+        'section'     => 'seque_contact_section',
+        'type'        => 'text',
+    ]);
+}
+add_action('customize_register', 'seque_customize_register');
 

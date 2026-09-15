@@ -618,12 +618,21 @@ p{ margin:0; }
 
 /* ---------------- CTA band ---------------- */
 .cta-band{
-  background:var(--amber); color:var(--ink);
-  padding:64px 0;
+  background:var(--slate);
+  color:var(--paper);
+  padding:80px 0;
+  border-top:1px solid var(--line-dark);
+  border-bottom:1px solid var(--line-dark);
 }
-.cta-band .wrap{ display:flex; justify-content:space-between; align-items:center; gap:24px; flex-wrap:wrap; }
-.cta-band h2{ font-size:clamp(24px,3vw,34px); max-width:20ch; }
-.cta-band .btn-outline-dark{ border-color:var(--ink); }
+.cta-band .wrap{
+  display:flex; justify-content:space-between; align-items:center; gap:32px; flex-wrap:wrap;
+}
+.cta-band h2{
+  font-size:clamp(26px,3.4vw,38px);
+  color:var(--paper);
+  max-width:24ch;
+  line-height:1.2;
+}
 
 /* ---------------- Contact ---------------- */
 .contact-grid{ display:grid; grid-template-columns:0.9fr 1.1fr; gap:64px; }
@@ -845,7 +854,8 @@ p{ margin:0; }
 .spec-card:hover .card-media img{
   transform:scale(1.06);
 }
-.on-dark .card-media{
+.on-dark .card-media,
+.on-steel .card-media{
   border-bottom-color:var(--line-dark);
 }
 
@@ -940,4 +950,65 @@ p{ margin:0; }
 .social-li{ background:#0A66C2; }
 @media(max-width:600px){
   .social-sidebar{ display:none; }
+}
+
+/* ---------------- Forminator Plugin Integration ---------------- */
+.forminator-custom-wrapper,
+.custom-form-wrapper{
+  width:100%;
+}
+.forminator-ui.forminator-custom-form{
+  font-family:var(--font-body) !important;
+}
+.forminator-ui .forminator-label{
+  font-family:var(--font-mono) !important;
+  font-size:12.5px !important;
+  color:var(--grey) !important;
+  text-transform:uppercase !important;
+  letter-spacing:0.04em !important;
+  margin-bottom:8px !important;
+  font-weight:600 !important;
+}
+.forminator-ui .forminator-input,
+.forminator-ui .forminator-textarea,
+.forminator-ui .forminator-select .forminator-select-dropdown{
+  border:1px solid var(--line) !important;
+  background:var(--white) !important;
+  padding:13px 14px !important;
+  font-family:var(--font-body) !important;
+  font-size:15px !important;
+  color:var(--graphite) !important;
+  border-radius:0 !important;
+  box-shadow:none !important;
+  transition:border-color .25s ease, box-shadow .25s ease !important;
+}
+.forminator-ui .forminator-input:focus,
+.forminator-ui .forminator-textarea:focus{
+  border-color:var(--amber) !important;
+  outline:none !important;
+  box-shadow:0 0 0 3px rgba(217,138,43,0.2) !important;
+}
+.forminator-ui .forminator-button.forminator-button-submit{
+  background:var(--amber) !important;
+  color:var(--ink) !important;
+  border:none !important;
+  border-radius:0 !important;
+  padding:14px 28px !important;
+  font-family:var(--font-head) !important;
+  font-size:15.5px !important;
+  font-weight:700 !important;
+  letter-spacing:0.02em !important;
+  cursor:pointer !important;
+  transition:background .2s ease, transform .2s ease, box-shadow .2s ease !important;
+}
+.forminator-ui .forminator-button.forminator-button-submit:hover{
+  background:var(--amber-dim) !important;
+  color:var(--paper) !important;
+  transform:translateY(-2px) !important;
+  box-shadow:0 6px 16px rgba(217,138,43,0.3) !important;
+}
+.forminator-ui .forminator-response-message{
+  font-family:var(--font-body) !important;
+  border-radius:0 !important;
+  margin-top:16px !important;
 }

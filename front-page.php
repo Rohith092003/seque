@@ -10,7 +10,7 @@ get_header();
 
 <section class="hero">
   <!-- Hero Background Video -->
-  <video class="hero-video" autoplay muted loop playsinline poster="<?php echo esc_url(get_template_directory_uri() . '/screenshot.png'); ?>">
+  <video class="hero-video" autoplay muted loop playsinline poster="<?php echo esc_url(get_template_directory_uri() . '/images/cta-bg.jpg'); ?>">
     <source src="<?php echo esc_url(get_template_directory_uri() . '/Video/Video2.mp4'); ?>" type="video/mp4">
   </video>
   <div class="hero-overlay"></div>
@@ -55,11 +55,11 @@ get_header();
         <circle cx="230" cy="320" r="5.5" fill="#1B4258" stroke="#FFFFFF" stroke-width="1.8"/>
 
         <!-- Labels with shadow for readability -->
-        <text x="30" y="330" fill="#FFFFFF" font-family="IBM Plex Mono" font-size="11" font-weight="600" filter="url(#text-shadow)">TERMINAL</text>
-        <text x="172" y="105" fill="#FFFFFF" font-family="IBM Plex Mono" font-size="11" font-weight="600" filter="url(#text-shadow)">DEPOT</text>
-        <text x="308" y="45" fill="#D98A2B" font-family="IBM Plex Mono" font-size="10" font-weight="600" filter="url(#text-shadow)">AIRBASE</text>
-        <text x="300" y="240" fill="#D98A2B" font-family="IBM Plex Mono" font-size="10" font-weight="600" filter="url(#text-shadow)">PORT</text>
-        <text x="198" y="345" fill="#D98A2B" font-family="IBM Plex Mono" font-size="10" font-weight="600" filter="url(#text-shadow)">FLEET SITE</text>
+        <text x="30" y="330" fill="#FFFFFF" font-family="IBM Plex Mono" font-size="11" font-weight="600" filter="url(#text-shadow)"><?php esc_html_e('TERMINAL', 'seque-infratech'); ?></text>
+        <text x="172" y="105" fill="#FFFFFF" font-family="IBM Plex Mono" font-size="11" font-weight="600" filter="url(#text-shadow)"><?php esc_html_e('DEPOT', 'seque-infratech'); ?></text>
+        <text x="308" y="45" fill="#D98A2B" font-family="IBM Plex Mono" font-size="10" font-weight="600" filter="url(#text-shadow)"><?php esc_html_e('AIRBASE', 'seque-infratech'); ?></text>
+        <text x="300" y="240" fill="#D98A2B" font-family="IBM Plex Mono" font-size="10" font-weight="600" filter="url(#text-shadow)"><?php esc_html_e('PORT', 'seque-infratech'); ?></text>
+        <text x="198" y="345" fill="#D98A2B" font-family="IBM Plex Mono" font-size="10" font-weight="600" filter="url(#text-shadow)"><?php esc_html_e('FLEET SITE', 'seque-infratech'); ?></text>
       </svg>
     </div>
   </div>
@@ -156,6 +156,7 @@ get_template_part('template-parts/client-row');
     </div>
     <div class="grid cols-3">
       <div class="spec-card why-card">
+        <div class="card-media"><img src="<?php echo esc_url( get_template_directory_uri() . '/images/why-tailored-products.jpg' ); ?>" alt="<?php esc_attr_e('Tailored Products', 'seque-infratech'); ?>" loading="lazy"></div>
         <div class="why-icon" aria-hidden="true">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
         </div>
@@ -163,6 +164,7 @@ get_template_part('template-parts/client-row');
         <p><?php esc_html_e('Fuel customized to your exact technical and performance specifications — from aviation-grade turbine fuels to renewable biodiesel blends.', 'seque-infratech'); ?></p>
       </div>
       <div class="spec-card why-card">
+        <div class="card-media"><img src="<?php echo esc_url( get_template_directory_uri() . '/images/why-global-logistics.jpg' ); ?>" alt="<?php esc_attr_e('Global Logistics Network', 'seque-infratech'); ?>" loading="lazy"></div>
         <div class="why-icon" aria-hidden="true">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
         </div>
@@ -170,6 +172,7 @@ get_template_part('template-parts/client-row');
         <p><?php esc_html_e('Powered by key partnerships with Gasa USA, Huntaway Midstream West, and Pemex USA — connecting your supply chain across continents.', 'seque-infratech'); ?></p>
       </div>
       <div class="spec-card why-card">
+        <div class="card-media"><img src="<?php echo esc_url( get_template_directory_uri() . '/images/why-pipeline-delivery.jpg' ); ?>" alt="<?php esc_attr_e('Pipeline Delivery Expertise', 'seque-infratech'); ?>" loading="lazy"></div>
         <div class="why-icon" aria-hidden="true">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
         </div>
@@ -177,6 +180,7 @@ get_template_part('template-parts/client-row');
         <p><?php esc_html_e('Uniquely positioned to deliver across major U.S. fuel corridors — West Coast, Rockies, Gulf Coast, and East Coast pipeline networks.', 'seque-infratech'); ?></p>
       </div>
       <div class="spec-card why-card">
+        <div class="card-media"><img src="<?php echo esc_url( get_template_directory_uri() . '/images/why-export-excellence.jpg' ); ?>" alt="<?php esc_attr_e('Export Excellence', 'seque-infratech'); ?>" loading="lazy"></div>
         <div class="why-icon" aria-hidden="true">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
         </div>
@@ -184,6 +188,7 @@ get_template_part('template-parts/client-row');
         <p><?php esc_html_e('Full-spectrum international support — from documentation to shipping — with FOB, CNF, and Ex-Works terms available for global clients.', 'seque-infratech'); ?></p>
       </div>
       <div class="spec-card why-card">
+        <div class="card-media"><img src="<?php echo esc_url( get_template_directory_uri() . '/images/why-project-support.jpg' ); ?>" alt="<?php esc_attr_e('Integrated Project Support', 'seque-infratech'); ?>" loading="lazy"></div>
         <div class="why-icon" aria-hidden="true">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8"/><path d="M12 17v4"/></svg>
         </div>
@@ -191,6 +196,7 @@ get_template_part('template-parts/client-row');
         <p><?php esc_html_e('Technical assistance, program management, and flexible payment terms — providing end-to-end support beyond just fuel delivery.', 'seque-infratech'); ?></p>
       </div>
       <div class="spec-card why-card">
+        <div class="card-media"><img src="<?php echo esc_url( get_template_directory_uri() . '/images/why-transport-partners.jpg' ); ?>" alt="<?php esc_attr_e('Trusted Transport Partners', 'seque-infratech'); ?>" loading="lazy"></div>
         <div class="why-icon" aria-hidden="true">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
         </div>

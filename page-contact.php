@@ -70,6 +70,56 @@ get_header();
 
       <div>
         <div class="eyebrow"><?php esc_html_e( 'SEND A MESSAGE', 'seque-infratech' ); ?></div>
+        <?php
+        $form_rendered = false;
+
+        // 1. Check Customizer / Theme Setting for specific Forminator ID or Shortcode
+        $theme_form_setting = trim( (string) get_theme_mod( 'seque_forminator_form_id', '' ) );
+        if ( ! empty( $theme_form_setting ) ) {
+            echo '<div class="forminator-custom-wrapper">';
+            if ( strpos( $theme_form_setting, '[' ) !== false ) {
+                echo do_shortcode( $theme_form_setting );
+            } else {
+                echo do_shortcode( '[forminator_form id="' . intval( $theme_form_setting ) . '"]' );
+            }
+            echo '</div>';
+            $form_rendered = true;
+        }
+
+        // 2. Check if the WordPress page content contains a Forminator form or shortcode
+        if ( ! $form_rendered ) {
+            $post_content = get_the_content();
+            $clean_content = trim( strip_tags( $post_content, '<div><p><span><form><input><textarea><button><iframe>' ) );
+            if ( ! empty( $clean_content ) || has_shortcode( $post_content, 'forminator_form' ) ) {
+                echo '<div class="custom-form-wrapper forminator-custom-wrapper">';
+                echo apply_filters( 'the_content', $post_content );
+                echo '</div>';
+                $form_rendered = true;
+            }
+        }
+
+        // 3. If not specified yet, auto-detect published Forminator forms from database
+        if ( ! $form_rendered && ( post_type_exists( 'forminator_forms' ) || class_exists( 'Forminator_API' ) ) ) {
+            $forminator_forms = get_posts([
+                'post_type'      => 'forminator_forms',
+                'post_status'    => 'publish',
+                'posts_per_page' => 1,
+                'orderby'        => 'date',
+                'order'          => 'DESC',
+            ]);
+
+            if ( ! empty( $forminator_forms ) ) {
+                $form_id = intval( $forminator_forms[0]->ID );
+                echo '<div class="forminator-custom-wrapper">';
+                echo do_shortcode( '[forminator_form id="' . $form_id . '"]' );
+                echo '</div>';
+                $form_rendered = true;
+            }
+        }
+
+        // 4. Fallback: Render default inquiry form if no Forminator form is detected
+        if ( ! $form_rendered ) :
+        ?>
         <form method="post" action="<?php echo esc_url( admin_url( 'admin-post.php' ) ); ?>" class="inquiry-form">
           <input type="hidden" name="action" value="seque_contact_form">
           <?php wp_nonce_field( 'seque_contact_nonce', 'seque_contact_nonce_field' ); ?>
@@ -104,6 +154,7 @@ get_header();
           </div>
           <button type="submit" class="btn btn-amber"><?php esc_html_e( 'Send message', 'seque-infratech' ); ?></button>
         </form>
+        <?php endif; ?>
       </div>
 
     </div>
