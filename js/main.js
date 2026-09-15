@@ -224,4 +224,25 @@ document.addEventListener('DOMContentLoaded', function () {
       socialSidebar.classList.add('visible');
     }, 3000);
   }
+
+  // 9. Hero Video — Pause audio when scrolled out of view, resume when back
+  var heroVideo = document.querySelector('.hero-video');
+  var heroSection = document.querySelector('.hero');
+  if (heroVideo && heroSection) {
+    var heroVisibilityObserver = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) {
+          // Hero is visible — unmute and play
+          heroVideo.muted = false;
+          if (heroVideo.paused) heroVideo.play();
+        } else {
+          // Hero is out of view — mute audio
+          heroVideo.muted = true;
+        }
+      });
+    }, {
+      threshold: 0.1  // trigger when at least 10% of hero is visible
+    });
+    heroVisibilityObserver.observe(heroSection);
+  }
 });
