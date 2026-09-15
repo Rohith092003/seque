@@ -14,6 +14,7 @@ get_header();
     <div class="breadcrumb"><span class="amber">04</span> · <?php esc_html_e( 'Contact', 'seque-infratech' ); ?></div>
     <h1><?php esc_html_e( "Let's fuel your next project.", 'seque-infratech' ); ?></h1>
     <p><?php esc_html_e( "Whether you're managing an international logistics operation, fueling a defense fleet, or powering remote infrastructure — Seque Infratech Inc. stands ready to meet your challenge.", 'seque-infratech' ); ?></p>
+    <p style="margin-top:16px; opacity:0.8;"><?php esc_html_e( 'Contact us now to explore how our fuel solutions can help your business run smarter, cleaner, and faster.', 'seque-infratech' ); ?></p>
   </div>
 </section>
 

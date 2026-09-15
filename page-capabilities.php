@@ -12,7 +12,7 @@ get_header();
   <div class="wrap page-hero-inner">
     <div class="breadcrumb"><span class="amber">02</span> · <?php esc_html_e('Capabilities', 'seque-infratech'); ?></div>
     <h1><?php esc_html_e('Powering industries. Fuelling progress.', 'seque-infratech'); ?></h1>
-    <p><?php esc_html_e('Founded in 2020 and backed by over three decades of industry experience, we specialize in fuel sourcing, delivery logistics, temporary storage, and project management — matching the right product with the right logistics, at the right time.', 'seque-infratech'); ?></p>
+    <p><?php esc_html_e('At Seque Infratech Inc., we are redefining what it means to be a reliable energy solutions partner in a rapidly evolving global market. Founded in 2020 and backed by over three decades of industry experience, we specialize in fuel sourcing, delivery logistics, temporary storage, and project management. Our strength lies in our ability to match the right product with the right logistics, at the right time — customized for your operational, regulatory, and geographic needs.', 'seque-infratech'); ?></p>
   </div>
 </section>
 
@@ -120,7 +120,7 @@ get_header();
     <div class="section-head">
       <div class="eyebrow"><?php esc_html_e('TRUSTED BY INDUSTRY LEADERS', 'seque-infratech'); ?></div>
       <h2><?php esc_html_e('Earning trust across sectors and geographies.', 'seque-infratech'); ?></h2>
-      <p><?php esc_html_e('Seque Infratech is proud to have earned the trust of both private and government clients. Each engagement is a testament to our reliability, technical excellence, and ability to deliver on promise.', 'seque-infratech'); ?></p>
+      <p><?php esc_html_e('Seque Infratech is proud to have earned the trust of both private and government clients across sectors and geographies. Each engagement is a testament to our reliability, technical excellence, and ability to deliver on promise.', 'seque-infratech'); ?></p>
     </div>
     <div class="grid cols-3">
       <div class="spec-card">
