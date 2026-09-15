@@ -236,7 +236,7 @@ p{ margin:0; }
   max-width:30ch;
 }
 .hero-lede{
-  margin-top:26px; font-size:19px; color:var(--grey-light); max-width:46ch; line-height:1.6;
+  margin-top:26px; font-size:22px; font-weight:700; color:var(--grey-light); max-width:46ch; line-height:1.6;
 }
 .hero-cta{ display:flex; gap:14px; margin-top:38px; flex-wrap:wrap; }
 .hero-diagram{ position:relative; }
