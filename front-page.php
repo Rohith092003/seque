@@ -108,7 +108,7 @@ get_header();
   <div class="wrap">
     <div class="section-head">
       <div class="eyebrow"><?php esc_html_e('CORE CAPABILITIES', 'seque-infratech'); ?></div>
-      <h2><?php esc_html_e('Powering industries. Fuelling progress.', 'seque-infratech'); ?></h2>
+      <h2 style="white-space: nowrap;"><?php esc_html_e('Powering industries. Fuelling progress.', 'seque-infratech'); ?></h2>
       <p><?php esc_html_e('Fuel sourcing, delivery logistics, temporary storage, and project management — matched to your operational, regulatory, and geographic needs.', 'seque-infratech'); ?></p>
     </div>
     <div class="grid cols-4" style="background:var(--line-dark); border-color:var(--line-dark);">
@@ -151,7 +151,7 @@ get_template_part('template-parts/client-row');
   <div class="wrap">
     <div class="section-head">
       <div class="eyebrow"><?php esc_html_e('WHY CHOOSE US', 'seque-infratech'); ?></div>
-      <h2><?php esc_html_e("We don't just deliver fuel — we deliver value.", 'seque-infratech'); ?></h2>
+      <h2 style="white-space: nowrap;"><?php esc_html_e("We don't just deliver fuel — we deliver value.", 'seque-infratech'); ?></h2>
       <p><?php esc_html_e('From tailored fuel solutions to seamless global logistics, Seque Infratech brings the full spectrum of expertise, partnerships, and execution to every engagement.', 'seque-infratech'); ?></p>
     </div>
     <div class="grid cols-3">
