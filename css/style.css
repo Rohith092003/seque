@@ -228,9 +228,10 @@ p{ margin:0; }
 
 /* ---------------- Hero (blueprint) ---------------- */
 .hero{
-  position:relative; background:var(--ink); color:var(--paper);
+  position:relative; background:#0A1A26 !important; color:var(--paper);
   overflow:hidden; padding:120px 0 100px;
   min-height:560px;
+  isolation:isolate;
 }
 /* Background video */
 .hero-video{
